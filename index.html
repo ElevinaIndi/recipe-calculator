@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Калькулятор рецептов</h1>
+
+    <!-- Форма для добавления ингредиентов -->
+    <div>
+        <h2>Добавить ингредиент</h2>
+        <input type="text" id="ingredient-name" placeholder="Название ингредиента">
+        <input type="number" id="ingredient-amount" placeholder="Количество">
+        <select id="ingredient-unit">
+            <option value="г">г</option>
+            <option value="мл">мл</option>
+            <option value="шт">шт</option>
+        </select>
+        <button onclick="addIngredient()">Добавить</button>
+    </div>
+
+    <!-- Отображение списка ингредиентов -->
+    <div>
+        <h2>Ингредиенты</h2>
+        <ul id="ingredients-list">
+            <!-- Список ингредиентов будет заполняться динамически -->
+        </ul>
+    </div>
+
+    <!-- Форма для изменения количества основного ингредиента -->
+    <div>
+        <h2>Изменить пропорции</h2>
+        <select id="main-ingredient">
+            <!-- Этот список будет заполняться динамически -->
+        </select>
+        <input type="number" id="new-main-amount" placeholder="Новое количество">
+        <button onclick="recalculateProportions()">Пересчитать</button>
+    </div>
+
+    <!-- Добавление описания, тегов и сохранение рецептов -->
+    <div>
+        <h2>Сохранить рецепт</h2>
+        <input type="text" id="recipe-name" placeholder="Название рецепта">
+        <textarea id="recipe-description" placeholder="Описание рецепта"></textarea>
+        <input type="text" id="recipe-tags" placeholder="Теги (через запятую)">
+        <button onclick="saveRecipe()">Сохранить рецепт</button>
+    </div>
+
+    <!-- Список покупок -->
+    <div>
+        <h2>Список покупок</h2>
+        <button onclick="generateShoppingList()">Обновить список покупок</button>
+        <ul id="shopping-list">
+            <!-- Список покупок будет заполняться динамически -->
+        </ul>
+    </div>
+
+    <!-- Список тегов -->
+    <div>
+        <h2>Теги</h2>
+        <div id="tags-list">
+            <!-- Теги будут заполняться динамически -->
+        </div>
+    </div>
+
+    <!-- Список рецептов -->
+    <div>
+        <h2>Рецепты</h2>
+        <ul id="recipes-list">
+            <!-- Рецепты будут заполняться динамически -->
+        </ul>
+    </div>
+
+    <!-- Отображение деталей рецепта -->
+    <div id="recipe-details" style="display: none;">
+        <h2>Детали рецепта</h2>
+        <h3 id="details-name"></h3>
+        <p id="details-description"></p>
+        <ul id="details-ingredients">
+            <!-- Ингредиенты рецепта будут отображаться здесь -->
+        </ul>
+        <button onclick="closeRecipeDetails()">Закрыть</button>
+    </div>
+</body>
+</html>

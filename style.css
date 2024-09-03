@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+input, select, button {
+    margin: 5px;
+    border-radius: 16px;
+    border: 2px solid #03A4FF;
+    padding: 16px 24px;
+    color: #03A4FF;
+    font-size: 16px;
+}
+.block{
+    margin: 10px auto;
+    background-color: #D6F5FF;
+    border-radius: 16px;
+    padding: 10px 20px;
+}
+h2, h1 {
+    color: #0072B1;
+}
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
