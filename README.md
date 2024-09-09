@@ -1,2 +1,2 @@
 # recipe-calculator
-elevinaindi.github.io
+https://elevinaindi.github.io/recipe-calculator/
