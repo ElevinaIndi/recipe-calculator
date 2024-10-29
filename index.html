@@ -8,14 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <img src="img/logo.png" width="60px" height="60px" class="logo">
+        <h1>Калькулятор рецептов</h1>
+    </header>
+
     <section class="cont">
-    <h1>Калькулятор рецептов</h1>
 
     <div class="tab-nav">
         <a class="tab-link" href="#content-1">Калькулятор</a>
         <a class="tab-link" href="#content-2">Список покупок</a>
         <a class="tab-link" href="#content-3">Мои рецепты</a>
-      </div>
+    </div>
 
     <div class="tab-content" id="content-1">
         <!-- Форма для добавления ингредиентов -->
@@ -57,7 +62,7 @@
             <input type="text" id="recipe-name" placeholder="Название рецепта">
             <input type="text" id="recipe-tags" placeholder="Теги (через запятую)">
 
-            <textarea rows="7" cols="50" id="recipe-description" placeholder="Описание рецепта"></textarea>
+            <textarea rows="7"  id="recipe-description" placeholder="Описание рецепта"></textarea>
         </div>
             <button class="button-save" onclick="saveRecipe()">Сохранить рецепт</button>
         </div>
@@ -86,7 +91,7 @@
     <!-- Список рецептов -->
     <div>
         <h2>Рецепты</h2>
-        <ul id="recipes-list">
+        <ul id="recipes-list" class="recipes-list">
             <!-- Рецепты будут заполняться динамически -->
         </ul>
     </div>
