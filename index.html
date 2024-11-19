@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    ,<script src="script.js"></script>
+    <script src="script.js"></script>
     <title>Document</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+    </script>
 </head>
 <body>
 
     <header>
-        <img src="img/logo.png" width="60px" height="60px" class="logo">
+        <img src="img/logo-rec.png" width="60px" height="60px" class="logo">
         <h1>Калькулятор рецептов</h1>
     </header>
 
@@ -108,5 +138,21 @@
     </div>
     </div>
 </section>
+<footer>
+    <div class="contact">
+        <tel>+7 933 192 7062</tel><br>
+        <mail>admin@elevina-indi.ru</mail><br>
+        <a class="telegram" href="elevina-indi">Telegram</a>
+    </div>
+    <div class="copirait">
+        © 2024  elevina-indi
+    </div>
+    <div class="site">
+        <a href="elevina-indi.ru"></a>
+        <img src="img/logo.png" width="60px" height="60px" class="logo"><br>
+        elevina-indi.ru
+    </a>
+    </div>
+</footer>
 </body>
 </html>
